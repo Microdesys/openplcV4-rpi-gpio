@@ -38,7 +38,7 @@ A Python plugin that adds native GPIO support to [OpenPLC Runtime V4 desktop](ht
 Open a terminal on your Raspberry Pi and run:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/openplcV4-rpi-gpio/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/Microdesys/openplcV4-rpi-gpio/main/install.sh | sudo bash
 ```
 
 The installer will automatically:
