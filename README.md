@@ -113,10 +113,8 @@ Once the plugin is installed and a PLC program is running, you can use the GPIO 
 
 ```Ladder
 GPIO26 sets GPIO21 and resets GPIO19.
-
-<img width="894" height="545" alt="ejemplo" src="https://github.com/user-attachments/assets/27a4f7ba-d1dc-4675-9bdd-34a3801c374d" />
-
 ```
+<img width="894" height="545" alt="ejemplo" src="https://github.com/user-attachments/assets/27a4f7ba-d1dc-4675-9bdd-34a3801c374d" />
 
 Compile and upload the program from the OpenPLC Editor pointing to your Raspberry Pi's IP address. As soon as the runtime enters RUNNING state the GPIO pins will respond.
 
