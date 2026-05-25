@@ -24,6 +24,42 @@ A Python plugin that adds native GPIO support to [OpenPLC Runtime V4 desktop](ht
 
 ---
 
+## Customising the GPIO mapping
+
+The GPIO mapping can be changed directly on the Raspberry Pi by editing the plugin file:
+/home/raspberrypi/openplc-runtime/core/src/drivers/plugins/python/rpi_gpio/rpi_gpio_plugin.py
+
+Open the file and locate the two maps near the top:
+
+```python
+# Input map: (gpio_pin, buffer_index, bit_index)  ->  %IX address
+INPUT_MAP = [
+    (26, 0, 0),  # %IX0.0
+    (19, 0, 1),  # %IX0.1
+    ...
+]
+
+# Output map: (buffer_index, bit_index, gpio_pin)  ->  %QX address
+OUTPUT_MAP = [
+    (0, 0, 21),  # %QX0.0
+    (0, 1, 20),  # %QX0.1
+    ...
+]
+```
+
+Change the GPIO number to any valid Raspberry Pi GPIO pin. For example,
+to move output `%QX0.0` from GPIO21 to GPIO18:
+
+```python
+(0, 0, 18),  # %QX0.0
+```
+
+After any change, restart the service to apply it:
+
+```bash
+sudo systemctl restart openplc-runtime.service
+```
+---
 ## Requirements
 
 - Raspberry Pi (tested on Raspberry Pi Zero 2W)
