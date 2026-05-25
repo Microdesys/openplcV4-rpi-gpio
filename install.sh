@@ -5,7 +5,7 @@
 #  Run this script on a Raspberry Pi that already has
 #  OpenPLC Runtime V4 desktop installed:
 #
-#    curl -fsSL https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/openplcV4-rpi-gpio/main/install.sh | sudo bash
+#    curl -fsSL https://raw.githubusercontent.com/Microdesys/openplcV4-rpi-gpio/main/install.sh | sudo bash
 #
 #  GPIO mapping installed by this script:
 #    Outputs: GPIO21=%QX0.0  GPIO20=%QX0.1  GPIO16=%QX0.2  GPIO12=%QX0.3
@@ -17,7 +17,7 @@
 set -euo pipefail
 
 # Replace with your actual GitHub username once the repo is created
-GITHUB_RAW="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/openplcV4-rpi-gpio/main"
+GITHUB_RAW="https://raw.githubusercontent.com/Microdesys/openplcV4-rpi-gpio/main"
 
 PLUGIN_NAME="rpi_gpio"
 PLUGIN_FILE="rpi_gpio_plugin.py"
