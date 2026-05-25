@@ -114,7 +114,7 @@ Once the plugin is installed and a PLC program is running, you can use the GPIO 
 ```Ladder
 GPIO26 sets GPIO21 and resets GPIO19.
 
-<img width="866" height="576" alt="image" src="https://github.com/user-attachments/assets/ac28535e-e4d2-4a3a-90b9-0d05fc0c1fab" />
+<img width="894" height="545" alt="ejemplo" src="https://github.com/user-attachments/assets/27a4f7ba-d1dc-4675-9bdd-34a3801c374d" />
 
 ```
 
